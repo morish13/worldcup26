@@ -1,0 +1,114 @@
+.stats-page { padding: 24px 16px; }
+
+.tourney-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stat-tile {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-val {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text2);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.scorers-section { margin-bottom: 28px; }
+
+.scorers-table-wrap { overflow-x: auto; padding: 0; }
+
+.scorers-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.scorers-table th {
+  padding: 10px 12px;
+  text-align: left;
+  color: var(--text2);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface2);
+}
+
+.scorers-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.scorers-table tr:last-child td { border-bottom: none; }
+
+.scorers-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+.rank-col { color: var(--text2); width: 30px; }
+
+.player-col { display: flex; flex-direction: column; gap: 2px; }
+
+.player-name { font-weight: 600; }
+
+.player-nat { font-size: 11px; color: var(--text2); }
+
+.goals-col { font-weight: 700; font-size: 15px; color: var(--gold); }
+
+.assist-col { color: var(--accent2); }
+
+.team-goals-section { margin-bottom: 24px; }
+
+.team-goals-list { display: flex; flex-direction: column; gap: 8px; }
+
+.team-goal-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+}
+
+.tgr-rank { width: 20px; color: var(--text2); font-size: 12px; }
+
+.tgr-name { width: 130px; font-weight: 500; font-size: 13px; }
+
+.tgr-bar-wrap {
+  flex: 1;
+  height: 6px;
+  background: var(--surface2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.tgr-bar {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.tgr-goals { width: 24px; text-align: right; font-weight: 700; font-size: 14px; }
+
+@media (max-width: 500px) {
+  .tourney-summary { grid-template-columns: 1fr; }
+}

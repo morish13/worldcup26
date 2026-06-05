@@ -1,0 +1,84 @@
+.teams-page { padding: 24px 16px; }
+
+.teams-controls {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.teams-search {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 14px;
+  color: var(--text);
+  font-size: 14px;
+  width: 100%;
+  max-width: 320px;
+  outline: none;
+}
+
+.teams-search:focus { border-color: var(--accent2); }
+
+.conf-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.team-tile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  transition: border-color 0.15s;
+}
+
+.team-tile:hover { border-color: var(--accent2); }
+
+.team-tile-crest {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.team-tile-flag {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.team-tile-info { min-width: 0; }
+
+.team-tile-name {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.team-tile-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text2);
+  margin-top: 3px;
+}
+
+.team-tile-coach,
+.team-tile-venue {
+  font-size: 11px;
+  color: var(--text2);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

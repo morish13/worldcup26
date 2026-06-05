@@ -1,0 +1,67 @@
+.groups-page { padding: 24px 16px; }
+
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+.group-card { overflow-x: auto; }
+
+.group-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.standings-table th {
+  color: var(--text2);
+  font-weight: 600;
+  padding: 4px 6px;
+  text-align: center;
+  font-size: 11px;
+  border-bottom: 1px solid var(--border);
+}
+
+.standings-table td {
+  padding: 6px 6px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.standings-table tr:last-child td { border-bottom: none; }
+
+.col-team {
+  text-align: left !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.col-pos { width: 24px; color: var(--text2); }
+
+.col-pts {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.qualify-row td { background: rgba(35, 134, 54, 0.08); }
+
+.qualify-row:first-child td:first-child {
+  border-left: 2px solid var(--accent);
+}
+
+.mini-crest {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}

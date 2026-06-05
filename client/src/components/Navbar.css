@@ -1,0 +1,58 @@
+.navbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.trophy { font-size: 22px; }
+
+.brand-text { color: var(--text); }
+
+.year { color: var(--gold); }
+
+.navbar-links {
+  display: flex;
+  gap: 4px;
+}
+
+.navbar-links a {
+  color: var(--text2);
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.15s, background 0.15s;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: var(--text);
+  background: var(--surface2);
+  text-decoration: none;
+}
+
+.navbar-links a.active {
+  color: var(--text);
+  background: var(--surface2);
+}
+
+@media (max-width: 600px) {
+  .navbar-links a { padding: 6px 8px; font-size: 13px; }
+}

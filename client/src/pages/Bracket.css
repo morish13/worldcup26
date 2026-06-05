@@ -1,0 +1,103 @@
+.bracket-page { padding: 24px 16px; }
+
+.bracket-scroll { overflow-x: auto; padding-bottom: 16px; }
+
+.bracket-columns {
+  display: flex;
+  gap: 20px;
+  min-width: 900px;
+  align-items: flex-start;
+}
+
+.bracket-col {
+  flex: 1;
+  min-width: 180px;
+}
+
+.bracket-col-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--gold);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.bracket-col-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bracket-match {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.bracket-match--tbd { opacity: 0.45; }
+
+.bracket-match--live {
+  border-color: var(--live);
+}
+
+.bm-team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.bm-team.winner { font-weight: 700; color: var(--gold); }
+
+.bm-team--away { margin-top: 2px; }
+
+.bm-crest {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.bm-score {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.bm-live-dot {
+  font-size: 9px;
+  color: var(--live);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+.bracket-placeholder {
+  max-width: 380px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.bracket-placeholder-inner {
+  padding: 32px;
+}
+
+.trophy-big { font-size: 48px; display: block; margin-bottom: 12px; }
+
+.bracket-placeholder p { color: var(--text2); font-size: 15px; }
+
+.bracket-placeholder .sub { font-size: 13px; margin-top: 6px; }
+
+.third-place {
+  margin-top: 24px;
+  max-width: 220px;
+}
